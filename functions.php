@@ -13,3 +13,12 @@ function randomDate($sStartDate, $sEndDate, $sFormat = 'Y-m-d')
     // Convert back to the specified date format
     return date($sFormat, $fVal);
 }
+
+function getAuthorFromId(int $id, array $authors): array {
+  foreach ($authors as $author) {
+    if ($author['id'] === $id) {
+      return $author;
+    }
+  }
+  return [];
+}

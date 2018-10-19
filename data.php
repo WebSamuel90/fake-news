@@ -119,3 +119,8 @@ $articles = [
     'likes' => rand(10, 100)
   ]
 ];
+
+foreach ($comments as $comment) {
+  echo $comment['author'];
+
+}

@@ -62,7 +62,7 @@ $comments = [
     'link' => $heroes['batman']['link'],
     'avatar' => $heroes['batman']['img'],
     'content' => "Hero can be anyone. Even a man knowing something as simple and reassuring as putting a coat around a young boy shoulders to let him know the world hadn't ended.",
-    'date' => $randomDate('2018-01-01', '2018.12.31'),
+    'date' => '2018-01-01',
     'likes' => rand(10, 100)
   ],
 
@@ -72,7 +72,7 @@ $comments = [
     'link' => $heroes['batman']['link'],
     'avatar' => $heroes['batman']['img'],
     'content' => "My anger outweights my guilt.",
-    'date' => $randomDate('2018-01-01', '2018.12.31'),
+    'date' => '2018.2.31',
     'likes' => rand(10, 100)
   ],
 
@@ -82,7 +82,7 @@ $comments = [
     'link' => $heroes['superman']['link'],
     'avatar' => $heroes['superman']['img'],
     'content' => "There is a superhero in all of us, we just need the courage to put on the cape.",
-    'date' => $randomDate('2018-01-01', '2018.12.31'),
+    'date' => '2018.3.31',
     'likes' => rand(10, 100)
   ],
 
@@ -92,7 +92,7 @@ $comments = [
     'link' => $heroes['superman']['link'],
     'avatar' => $heroes['superman']['img'],
     'content' => "You will be different, sometimes you’ll feel like an outcast, but you’ll never be alone.",
-    'date' => $randomDate('2018-01-01', '2018.12.31'),
+    'date' => '2018.4.31',
     'likes' => rand(10, 100)
   ],
 
@@ -102,7 +102,7 @@ $comments = [
     'link' => $heroes['ironman']['link'],
     'avatar' => $heroes['ironman']['img'],
     'content' => "You can take away my suits, you can take away my home, but there’s one thing you can never take away from me: I AM IRON MAN.",
-    'date' => $randomDate('2018-01-01', '2018.12.31'),
+    'date' => '2018.5.31',
     'likes' => rand(10, 100)
   ],
 
@@ -112,7 +112,7 @@ $comments = [
     'link' => $heroes['ironman']['link'],
     'avatar' => $heroes['ironman']['img'],
     'content' => "I’m Tony Stark. I build neat stuff, got a great girl, occasionally save the world. So why can’t I sleep?",
-    'date' => $randomDate('2018-01-01', '2018.12.31'),
+    'date' => '2018.6.31',
     'likes' => rand(10, 100)
   ],
 
@@ -122,7 +122,7 @@ $comments = [
     'link' => $heroes['captain']['link'],
     'avatar' => $heroes['captain']['img'],
     'content' => "Pretty much.",
-    'date' => $randomDate('2018-01-01', '2018.12.31'),
+    'date' => '2018.7.31',
     'likes' => rand(10, 100)
   ],
 
@@ -132,7 +132,7 @@ $comments = [
     'link' => $heroes['captain']['link'],
     'avatar' => $heroes['captain']['img'],
     'content' => "I don't want to kill anyone, but I don't like bullies; I don't care where they're from.",
-    'date' => $randomDate('2018-01-01', '2018.12.31'),
+    'date' => '2018.8.31',
     'likes' => rand(10, 100)
   ],
 
@@ -142,7 +142,7 @@ $comments = [
     'link' => $heroes['hulk']['link'],
     'avatar' => $heroes['hulk']['img'],
     'content' => "Stupid big lady! Do what Hulk wants! Or Hulk will smash you, and take your kitties!",
-    'date' => $randomDate('2018-01-01', '2018.12.31'),
+    'date' => '2018.9.31',
     'likes' => rand(10, 100)
   ],
 
@@ -152,7 +152,12 @@ $comments = [
     'link' => $heroes['hulk']['link'],
     'avatar' => $heroes['hulk']['img'],
     'content' => "HULK IS NOT AFRAID...HULK IS STRONGEST ONE THERE IS!!!",
-    'date' => $randomDate('2018-01-01', '2018.12.31'),
+    'date' => '2018.10.31',
     'likes' => rand(10, 100)
   ]
 ];
+
+foreach ($comments as $comment) {
+  echo $comment['author'];
+
+}

@@ -4,7 +4,12 @@ require __DIR__.'/header.php';
 require __DIR__.'/functions.php';
 require __DIR__.'/data.php';
 
-usort($articles, 'sortByDate');
+  if (isset($_GET['sortBy']) && $_GET['sortBy'] === 'likes') {
+    usort($articles, 'sortByLikes');
+  } else {
+    usort($articles, 'sortByDate');
+  }
+
 ?>
 
 <body>
@@ -65,6 +70,11 @@ usort($articles, 'sortByDate');
                         </div>
                     </div>
                 </div>
+                <div class="sort">
+                <a href="?sortBy=likes">Likes</a>
+                <a href="?sortBy=dates">Date</a>
+                </div>
+
                 <!-- Post /////-->
 
                 <!--- \\\\\\\Post-->

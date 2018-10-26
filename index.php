@@ -3,7 +3,10 @@ declare(strict_types=1);
 require __DIR__.'/header.php';
 require __DIR__.'/functions.php';
 require __DIR__.'/data.php';
+
+usort($articles, 'sortByDate');
 ?>
+
 <body>
 
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
@@ -83,7 +86,7 @@ require __DIR__.'/data.php';
                     </div>
 
                     <div class="card-body">
-                        <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i><?php echo randomDate('2018-10-01', '2018-12-31'); ?></div>
+                        <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i><?php echo $article['date']; ?></div>
                         <a class="card-link" href="#">
                             <h5 class="card-title"><?php echo $article['title']; ?></h5>
                         </a>

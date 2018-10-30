@@ -22,10 +22,10 @@ body {
 }
 
 /**Reset Bootstrap*/
-.dropdown-toggle::after {
+/* .dropdown-toggle::after {
   content: none;
   display: none;
-}
+} */
 
 .content-wrapper {
   width: 100%;

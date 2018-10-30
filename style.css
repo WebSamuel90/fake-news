@@ -11,29 +11,18 @@ body {
 }
 
 @media (min-width: 992px) {
-.gedf-main {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
+  .gedf-main {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 
   .gedf-card {
     margin-bottom: 2.77rem;
   }
 }
 
-/**Reset Bootstrap*/
-/* .dropdown-toggle::after {
-  content: none;
-  display: none;
-} */
-
 .content-wrapper {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-}
-
-.sort {
-  display: flex;
-  justify-content: flex-end;
 }

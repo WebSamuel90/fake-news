@@ -23,22 +23,6 @@ function getAuthorFromId(int $id, array $authors): array {
   return [];
 }
 
-
-// // function sortByDate(array $articles, string $key) {
-// //   foreach ($articles as $key => $v) {
-// //     $temp[] = $v[$key];
-// //   }
-// //   if ($key === 'date' || $key === 'likes') {
-// //     arsort($temp);
-// //   } else {
-// //     asort($temp);
-// //   }
-// //   foreach ($temp as $k => $v) {
-// //     $sorted[] = $articles[$k];
-// //   }
-// //   return $sorted;
-// }
-
 // Function to sort by date descending
 function sortByDate(array $a, array $b): int {
 return strcmp($a['date'], $b['date']);

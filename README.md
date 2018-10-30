@@ -15,6 +15,7 @@ My project - Superhero news
 
 ## Testers 
 - André Broman
+- Fredrik Leemann
 
 ## Author
 - [Samuel](github.com/WebSamuel90)

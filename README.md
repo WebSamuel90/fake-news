@@ -1,8 +1,8 @@
-# php-handin
+# Fake News
 
 PHP - Assignment
 
-My project - Fake News
+My project - Superhero news
 
 ## Installation
 1. Clone this repository to your computer

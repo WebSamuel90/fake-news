@@ -5,6 +5,11 @@ PHP - Assignment
 
 My project - Superhero news
 
+## Languages used
+- PHP
+- HTML
+- CSS
+
 ## Installation
 1. Clone this repository to your computer
 2. Start MAMP and go to -> Preferences -> Web Server

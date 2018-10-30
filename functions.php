@@ -1,19 +1,12 @@
 <?php
 
 declare(strict_types=1);
-
-
-function randomDate($sStartDate, $sEndDate, $sFormat = 'Y-m-d')
-{
-    // Convert the supplied date to timestamp
-    $fMin = strtotime($sStartDate);
-    $fMax = strtotime($sEndDate);
-    // Generate a random number from the start and end dates
-    $fVal = mt_rand($fMin, $fMax);
-    // Convert back to the specified date format
-    return date($sFormat, $fVal);
-}
-
+/**
+ * [getAuthorFromId retrieves author based on ID]
+ * @param  int   $id      [ID to compare against]
+ * @param  array $authors [Author array]
+ * @return array          [Authors sub-array]
+ */
 function getAuthorFromId(int $id, array $authors): array {
   foreach ($authors as $author) {
     if ($author['id'] === $id) {
@@ -23,12 +16,22 @@ function getAuthorFromId(int $id, array $authors): array {
   return [];
 }
 
-// Function to sort by date descending
+/**
+ * [sortByDate Sorts post by date]
+ * @param  array $a
+ * @param  array $b
+ * @return int
+ */
 function sortByDate(array $a, array $b): int {
 return strcmp($a['date'], $b['date']);
 }
-// Function to sort by likes descending
-function sortByLikes($a, $b){
+/**
+ * [sortByLikes Sorts post by likes]
+ * @param  array $a
+ * @param  array $b
+ * @return int
+ */
+function sortByLikes(array $a, array $b):int {
     if ($a['likes'] == $b['likes']) {
         return 0;
     }

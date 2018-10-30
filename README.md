@@ -1,4 +1,5 @@
 # Fake News
+[![Git Basics](https://media.giphy.com/media/11SDrsZw9wiOuA/giphy.gif)](https://github.com)
 
 PHP - Assignment
 

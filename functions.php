@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 /**
  * [getAuthorFromId retrieves author based on ID]
  * @param  int   $id      [ID to compare against]
@@ -25,6 +26,7 @@ function getAuthorFromId(int $id, array $authors): array {
 function sortByDate(array $a, array $b): int {
 return strcmp($a['date'], $b['date']);
 }
+
 /**
  * [sortByLikes Sorts post by likes]
  * @param  array $a
